@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{{- $defaultColor := .Site.Params.defaultColor | default "auto" -}}
+
+{{- if eq $defaultColor "dark" -}}
+<html lang="{{ .Site.LanguageCode }}" class="dark">
+{{- else if eq $defaultColor "light" -}}
+<html lang="{{ .Site.LanguageCode }}" class="light">
+{{- else -}}
+<html lang="{{ .Site.LanguageCode }}">
+{{- end -}}
+
+{{- partial "head.html" . -}}
+
+<body data-theme="{{ $defaultColor }}" class="notransition">
+    {{- partial "scriptsBodyStart.html" . -}}
+    {{- partial "header.html" . -}}
+    <div class="wrapper">
+        {{ partial "bio" . }}
+        <main aria-label="Content">
+
+          <!-- 欢迎语部分 -->
+          <section class="intro">
+            <h1>Hi, Darcy here. 👋</h1>
+            <p>很久以来，我都想要一个只属于自己的空间，存放我经历过的、我喜欢的一切。</p>
+            <p>但这个梦想一时半会无法实现，所以我给自己搭建了另一个空间，就是这里。</p>
+            <p>这里包含：</p>
+          </section>
+
+          <!-- 栏目导览卡片 -->
+          <section class="site-guide">
+
+              <div class="guide-card">
+                <h3>功课 · Study</h3>
+                <p>作为 Finance → Data Science 在读学生的学习笔记</p>
+                <ul>
+                  {{ range first 3 (where .Site.RegularPages "Section" "study") }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a> — {{ .Date.Format "2006-01-02" }}</li>
+                  {{ end }}
+                </ul>
+                <p><a class="card-link" href="/study/">›› 查看功课全部</a></p>
+              </div>
+
+              <div class="guide-card">
+                <h3>书影音 · Media</h3>
+                <p>读到、看到、听到的一些内容，以及它们带给我的想法</p>
+                <ul>
+                  {{ range first 3 (where .Site.RegularPages "Section" "media") }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a> — {{ .Date.Format "2006-01-02" }}</li>
+                  {{ end }}
+                </ul>
+                <p><a class="card-link" href="/media/">›› 查看书影音全部</a></p>
+              </div>
+
+              <div class="guide-card">
+                <h3>随机游走 · Wander</h3>
+                <p>记生活日常、城市漫步、旅行片段…</p>
+                <ul>
+                  {{ range first 3 (where .Site.RegularPages "Section" "wander") }}
+                    <li><a href="{{ .Permalink }}">{{ .Title }}</a> — {{ .Date.Format "2006-01-02" }}</li>
+                  {{ end }}
+                </ul>
+                <p><a class="card-link" href="/wander/">›› 查看随机游走全部</a></p>
+              </div>
+              <p>欢迎来到我的空间，带着好奇心随意走走吧。</p>
+            </div>
+          </section>
+
+        </main>
+    </div>
+    {{- partial "footer.html" . -}}
+    {{- partial "scriptsBodyEnd.html" . -}}
+</body>
+
+</html>

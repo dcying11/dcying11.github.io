@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Darcy的日课</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Darcy的日课</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 17 Nov 2025 17:40:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Travel Snippet 1</title>
+      <link>http://localhost:1313/wander/travel-snippet-1/</link>
+      <pubDate>Mon, 17 Nov 2025 16:50:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/wander/travel-snippet-1/</guid>
+      
+      <description>&lt;p&gt;旅行随手记录的片段 ✍️&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>近日阅读分享</title>
+      <link>http://localhost:1313/media/nov25_book/</link>
+      <pubDate>Mon, 17 Nov 2025 16:50:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/media/nov25_book/</guid>
+      
+      <description>&lt;p&gt;这些是11 月我读的书！📚&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>First Study Note</title>
+      <link>http://localhost:1313/study/first-study-note/</link>
+      <pubDate>Mon, 17 Nov 2025 16:50:47 +0800</pubDate>
+      
+      <guid>http://localhost:1313/study/first-study-note/</guid>
+      
+      <description>&lt;p&gt;这是我的第一个学习笔记 📒&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Darcy 的第一篇 blog</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 17 Nov 2025 16:24:43 +0800</pubDate>
+      
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      
+      <description>&lt;p&gt;你好！这是我的 blog 第一篇文章。&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

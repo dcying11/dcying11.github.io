@@ -1,0 +1,28 @@
+baseURL = "https://dcying11.github.io/"  
+languageCode = "zh-cn"
+title = "Darcy的日课"
+canonifyURLs = true
+relativeURLs = false
+
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
+
+[menus]
+  [[menus.main]]
+    name = "功课"
+    url = "/study/"
+    weight = 10
+
+  [[menus.main]]
+    name = "书影音"
+    url = "/media/"
+    weight = 20
+
+  [[menus.main]]
+    name = "随机游走"
+    url = "/wander/"
+    weight = 30
+
+[params]
+  mainSections = ["study", "media", "wander"]
